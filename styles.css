@@ -966,6 +966,7 @@ footer {
     }
     .hero-image-wrapper {
         order: -1;
+        margin-top: 3.5rem;
     }
     .hero-text {
         align-items: center;
