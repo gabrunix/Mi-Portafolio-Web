@@ -1,30 +1,51 @@
-# 👨‍💻 Mi Portafolio Profesional 
+# ¡Hola! Bienvenidos a mi Portafolio 👋
 
-Bienvenido al código fuente de mi **Portafolio Personal Web**. Este es un entorno donde expongo mis habilidades, formación académica, certificaciones y proyectos destacados de una forma limpia, moderna y profesional.
+¡Qué bueno verte por aquí! Soy **Gabriel Urbaez** y te invito a echarle un vistazo al código fuente de mi portafolio web personal. 
 
-## 🚀 Tecnologías Utilizadas
+Decidí construir este sitio intentando mantenerlo simple pero visualmente impactante, demostrando que no siempre hace falta depender de decenas de frameworks pesados o plantillas comerciales. Con una buena base, logramos algo súper rápido, con animaciones atractivas y, lo más importante, muy fácil de mantener y escalar.
 
-Este portafolio fue construido pensando en la rapidez de carga, accesibilidad y en un diseño altamente responsivo (UI/UX). Las principales tecnologías que lo impulsan son:
+## 🛠️ Con qué está construido
 
-- **HTML5 (Semántico):** Para la estructuración y SEO.
-- **CSS3 (Natívo / Vanilla):** Usando variables CSS, flexbox, grid y un sistema de diseño dinámico mediante keyframes sin depender fuertemente de frameworks visuales pesados.
-- **JavaScript (Vanilla JS):** Lógica principal, incluyendo un sistema personalizado de **Traducción Automática (Multi-idioma)** basado en atributos `data-i18n`, navegación fluida interactiva y modales modulares.
-- **FormSubmit API:** Sistema integrado directamente en el frontend para gestionar la comunicación por correo sin la necesidad de desplegar un backend intermedio.
-- **Swiper.js:** Para la presentación de un slider 3D dinámico tipo coverflow en el que se ubican mis certificaciones.
-- **Particles.js:** Enriqueciendo la estética del diseño con un fondo técnico en el Hero.
-- **FontAwesome & Devicon:** Conjunto de iconos vectoriales que optimizan la interfaz y el peso general de las gráficas.
+En lugar de hacerte leer listas aburridas, aquí te dejo las herramientas clave que le dan vida a mi sitio:
 
-## 🌟 Características Principales
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) 
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) 
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
-- 🌓 **Diseño "Dark/Neon Theme":** Estética altamente tecnológica.
-- 🌍 **Soporte Bilingüe Embebido:** Lógica nativa (ES/EN) con animaciones sin necesidad de refrescar la página.
-- 📱 **Totalmente Responsivo:** Una experiencia perfecta tanto en Desktop como en móviles.
+#### Librerías de Apoyo:
+* ![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=swiper&logoColor=white) Para que el carrusel de mis certificaciones se vea fluido, en 3D (coverflow) y responda al pasar el dedo en el móvil.
+* **Particles.js:** Le da un toque interactivo y sutil al encabezado sin volver pesada la página.
+* **FormSubmit:** Integrado en el formulario de contacto para recibir correos directo en mi bandeja de entrada, sin tener que levantar servidores intermedios backend.
 
-## 🛠 Entorno e Instalación Local 
+## 📂 ¿Cómo está organizado el código?
 
-Puedes clonar este repositorio para examinar a detalle el código. No requiere procesos de 'build' u otra compilación compleja de Node:
-1. Clona el repositorio con `git clone https://github.com/gabrunix/Mi-Portafolio-Web.git`
-2. Puedes desplegarlo utilizando la extensión **Live Server** de Visual Studio Code o símplemente abriendo el `index.html` en tu navegador.
+Si quieres bucear por los archivos, traté de mantener la arquitectura lo más ordenada y lógica posible:
+
+```text
+📦 Mi-Portafolio-Web
+ ┣ 📂 assets           # Archivos multimedia: mi foto, certificados, logos e imágenes de proyectos.
+ ┣ 📜 index.html       # El esqueleto del sitio. Todo bien etiquetado y semántico para buen SEO.
+ ┣ 📜 styles.css       # Todo el look and feel (variables CSS, flexbox, CSS Grid, media queries y animaciones hover fluidas).
+ ┣ 📜 script.js        # La lógica de interacción, el "switch" mágico de Traducción (Inglés/Español) y los pop-ups (modales).
+ ┣ 📜 LICENSE          # Licencia MIT. Úsalo libremente para inspirarte o mejorar el tuyo.
+ ┗ 📜 README.md        # Esta misma presentación que estás leyendo :)
+```
+
+## 🚀 ¿Cómo probarlo en tu compu?
+
+Lo mejor de este proyecto es que vive completamente del lado del navegador del usuario. Cero instalaciones pesadas, cero `npm install`:
+
+1. Abre tu terminal favorita y clona mi repositorio:
+   ```bash
+   git clone https://github.com/gabrunix/Mi-Portafolio-Web.git
+   ```
+2. Entra a la carpeta del proyecto.
+3. Tienes un par de opciones súper sencillas para arrancar y verlo:
+   * **La forma tradicional:** Simplemente ve a la carpeta en tu explorador y dale doble clic al archivo `index.html`.
+   * **La forma del Desarrollador (Recomendada):** Ábrelo en Visual Studio Code, bájate la extensión **Live Server** y lánzalo. ¡Así cualquier cambio o prueba que hagas en el código la vas a ver reflejada instantáneamente en el navegador!
 
 ---
-> Creado de manera profesional por **Gabriel Urbaez** - [LinkedIn](https://www.linkedin.com/in/gabrunix/) | [GitHub](https://github.com/gabrunix)
+Si te gustó cómo quedó estructurado o usaste un pedacito de código para el tuyo, ¡un comentario o feedback siempre son más que bienvenidos!
+
+> 💻 **Gabriel Urbaez**  
+> [Conecta conmigo en LinkedIn](https://www.linkedin.com/in/gabrunix/) | [Mi perfil de GitHub](https://github.com/gabrunix)
