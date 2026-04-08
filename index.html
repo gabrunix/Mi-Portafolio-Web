@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Urbaez | Portfolio</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio de Gabriel Urbaez, Especialista TI y Desarrollador Software Full Stack. Experiencia en React, Node.js, Python y bases de datos.">
+
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">&lt;Gabrunix Code /&gt; Mi Portafolio</div>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">Sobre Mí</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Habilidades</a></li>
+                <li><a href="#studies" data-i18n="nav_studies">Formación</a></li>
+                <li><a href="#certifications" data-i18n="nav_certifications">Certificaciones</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Proyectos</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+            </ul>
+            <div class="lang-switch">
+                <button id="btn-es" class="lang-btn active">ES</button>
+                <button id="btn-en" class="lang-btn">EN</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="about" class="hero">
+        <div class="hero-particles" id="particles-js"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h3 class="greeting" data-i18n="greeting">¡Hola! Soy</h3>
+                <h1 class="name">Gabriel Urbaez</h1>
+                <h2 class="role">
+                    <span class="gradient-text" data-i18n="role1">Especialista TI</span> &amp;
+                    <span class="gradient-text" data-i18n="role2">Desarrollador de Software</span>
+                </h2>
+                <p class="description" data-i18n="hero_desc">
+                    Soy Desarrollador Full Stack Jr con experiencia en proyectos académicos, personales, corporativos y
+                    freelancer, creando soluciones completas desde UX/UI y frontend hasta backend y bases de datos.
+                    Destaco por mi proactividad y mi enfoque en el aprendizaje rápido y continuo.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-i18n="contact_btn">Contáctame <i
+                            class="fas fa-paper-plane"></i></a>
+                    <a href="#projects" class="btn btn-secondary" data-i18n="projects_btn">Ver Proyectos <i
+                            class="fas fa-arrow-right"></i></a>
+                    <div class="social-links-hero">
+                        <a href="https://www.linkedin.com/in/gabrunix/" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/gabrunix" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-glow"></div>
+                <img src="./assets/profile.jpg" alt="Gabriel Urbaez" class="hero-image"
+                    onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                <div class="badges-row">
+                    <div class="floating-badge badge-js"><i class="devicon-javascript-plain colored"></i></div>
+                    <div class="floating-badge badge-react"><i class="devicon-react-original colored"></i></div>
+                    <div class="floating-badge badge-python"><i class="devicon-python-plain colored"></i></div>
+                    <div class="floating-badge badge-db"><i class="fas fa-database" style="color:#0ea5e9;"></i></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-container">
+            <h2 class="section-title" data-i18n="skills_title">Mis Habilidades</h2>
+
+            <div class="skills-grid">
+                <!-- Lenguajes -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3 data-i18n="skill_languages">Lenguajes</h3>
+                    <ul>
+                        <li><i class="devicon-python-plain colored"></i> Python</li>
+                        <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+                        <li><i class="devicon-typescript-plain colored"></i> TypeScript</li>
+                    </ul>
+                </div>
+
+                <!-- Frontend & Frameworks -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-desktop"></i></div>
+                    <h3 data-i18n="skill_frontend">Frontend / Frameworks</h3>
+                    <ul>
+                        <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+                        <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+                        <li><i class="devicon-react-original colored"></i> React</li>
+                        <li><i class="devicon-angularjs-plain colored"></i> Angular</li>
+                        <li><i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS</li>
+                    </ul>
+                </div>
+
+                <!-- Backend & Frameworks -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3 data-i18n="skill_backend">Backend / Frameworks</h3>
+                    <ul>
+                        <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
+                        <li><i class="devicon-express-original colored"></i> Express.js</li>
+                        <li><i class="devicon-django-plain colored"></i> Django</li>
+                        <li><i class="devicon-fastapi-plain colored"></i> FastAPI</li>
+                        <li><i class="fas fa-network-wired text-accent"></i> <span data-i18n="skill_apis">APIs</span></li>
+                        <li><i class="fas fa-shield-alt text-accent"></i> <span data-i18n="skill_auth">JWT Auth</span></li>
+                    </ul>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3 data-i18n="skill_db">Bases de Datos</h3>
+                    <ul>
+                        <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+                        <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+                        <li><i class="devicon-microsoftsqlserver-plain colored"></i> SQL Server</li>
+                        <li><i class="devicon-oracle-original colored"></i> Oracle</li>
+                        <li><i class="devicon-redis-plain colored"></i> Redis</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3 data-i18n="skill_tools">Herramientas</h3>
+                    <ul>
+                        <li><i class="devicon-vscode-plain colored"></i> VS Code</li>
+                        <li><i class="devicon-git-plain colored"></i> Git / GitHub</li>
+                        <li><i class="devicon-docker-plain colored"></i> Docker</li>
+                        <li><i class="fab fa-linux text-accent"></i> <span data-i18n="skill_os">Linux, MacOS, Windows</span></li>
+                        <li><i class="fas fa-robot text-accent"></i> <span data-i18n="skill_automation">N8N</span></li>
+                        <li><i class="fas fa-chart-bar text-accent"></i> <span data-i18n="skill_bi">Power BI</span></li>
+                    </ul>
+                </div>
+
+                <!-- Desktop Development -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-window-maximize"></i></div>
+                    <h3 data-i18n="skill_desktop">Desktop</h3>
+                    <ul>
+                        <li><i class="devicon-python-plain colored"></i> <span data-i18n="skill_python_gui">Python GUI</span></li>
+                        <li><i class="fas fa-code text-accent"></i> Tkinter / PyQt / Kivy</li>
+                        <li><i class="devicon-electron-original colored"></i> Electron.js</li>
+                    </ul>
+                </div>
+
+                <!-- Idiomas -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-language"></i></div>
+                    <h3 data-i18n="languages_title">Idiomas</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle text-accent"></i> <span data-i18n="lang_es">Español (Nativo)</span></li>
+                        <li><i class="fas fa-check-circle text-accent"></i> <span data-i18n="lang_en">Inglés (Técnico)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formación Académica Section -->
+    <section id="studies" class="section bg-darker">
+        <div class="section-container">
+            <h2 class="section-title" data-i18n="studies_title">Formación Académica</h2>
+
+            <div class="education-card">
+                <div class="edu-logo">
+                    <img src="./assets/logo-itla.png" alt="ITLA Logo">
+                </div>
+                <div class="edu-content">
+                    <h3 class="edu-institution" data-i18n="edu_inst">Instituto Tecnológico de Las Américas (ITLA) - Rep.
+                        Dom</h3>
+                    <h4 class="edu-title" data-i18n="edu_degree">Estudios Superiores</h4>
+                    <p class="edu-desc" data-i18n="edu_desc">
+                        Desarrollo de software, Bases de datos, Certificaciones en Python, JavaScript, Taller de
+                        Ciberseguridad, Business Intelligence with Power BI, Ingeniería de Prompts e Inteligencia
+                        Artificial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="section-container">
+            <h2 class="section-title" data-i18n="cert_title">Mis Certificaciones</h2>
+            <p class="section-subtitle" data-i18n="cert_subtitle">Valido mis conocimientos a través de certificaciones
+                oficiales.</p>
+
+            <div class="swiper certifications-slider">
+                <div class="swiper-wrapper">
+                    <!-- Las 11 Certificaciones -->
+                    <div class="swiper-slide cert-card" onclick="openCertModal(1)" style="cursor: pointer;">
+                        <div class="cert-img-wrapper">
+                            <img src="./assets/cert-1.jpg" alt="Certificación 1">
+                        </div>
+                    </div>
+                    <div class="swiper-slide cert-card" onclick="openCertModal(2)" style="cursor: pointer;">
+                        <div class="cert-img-wrapper">
+                            <img src="./assets/cert-2.jpg" alt="Certificación 2">
+                        </div>
+                    </div>
+                    <div class="swiper-slide cert-card" onclick="openCertModal(3)" style="cursor: pointer;">
+                        <div class="cert-img-wrapper">
+                            <img src="./assets/cert-3.jpg" alt="Certificación 3">
+                        </div>
+                    </div>
+                    <div class="swiper-slide cert-card" onclick="openCertModal(4)" style="cursor: pointer;">
+                        <div class="cert-img-wrapper">
+                            <img src="./assets/cert-4.jpg" alt="Certificación 4">
+                        </div>
+                    </div>
+                    <div class="swiper-slide cert-card" onclick="openCertModal(5)" style="cursor: pointer;">
+                        <div class="cert-img-wrapper">
+                            <img src="./assets/cert-5.jpg" alt="Certificación 5">
+                        </div>
+                    </div>
+                    <div class="swiper-slide cert-card" onclick="openCertModal(6)" style="cursor: pointer;">
+                        <div class="cert-img-wrapper">
+                            <img src="./assets/cert-6.jpg" alt="Certificación 6">
+                        </div>
+                    </div>
+                    <div class="swiper-slide cert-card" onclick="openCertModal(7)" style="cursor: pointer;">
+                        <div class="cert-img-wrapper">
+                            <img src="./assets/cert-7.jpg" alt="Certificación 7">
+                        </div>
+                    </div>
+                    <div class="swiper-slide cert-card" onclick="openCertModal(8)" style="cursor: pointer;">
+                        <div class="cert-img-wrapper">
+                            <img src="./assets/cert-8.jpg" alt="Certificación 8">
+                        </div>
+                    </div>
+                    <div class="swiper-slide cert-card" onclick="openCertModal(9)" style="cursor: pointer;">
+                        <div class="cert-img-wrapper">
+                            <img src="./assets/cert-9.jpg" alt="Certificación 9">
+                        </div>
+                    </div>
+                    <div class="swiper-slide cert-card" onclick="openCertModal(10)" style="cursor: pointer;">
+                        <div class="cert-img-wrapper">
+                            <img src="./assets/cert-10.jpg" alt="Certificación 10">
+                        </div>
+                    </div>
+                    <div class="swiper-slide cert-card" onclick="openCertModal(11)" style="cursor: pointer;">
+                        <div class="cert-img-wrapper">
+                            <img src="./assets/cert-11.jpg" alt="Certificación 11">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper Features -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Portfolio -->
+    <section id="projects" class="section bg-darker">
+        <div class="section-container">
+            <h2 class="section-title" data-i18n="projects_title">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./assets/project1.jpg" alt="Project 1"
+                            onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <h3 class="project-title">Sistema de Gestión ERP</h3>
+                        <p class="project-desc" data-i18n="project1_desc">Plataforma web completa para la gestión de
+                            recursos empresariales, incluyendo ventas, inventario y reportes en tiempo real.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Código</a>
+                            <a href="#" class="btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./assets/project2.jpg" alt="Project 2"
+                            onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <h3 class="project-title">E-Commerce Backend API</h3>
+                        <p class="project-desc" data-i18n="project2_desc">Arquitectura backend robusta y segura para una
+                            tienda en línea, integración con pasarelas de pago y gestión de usuarios.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Código</a>
+                            <a href="#" class="btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-container">
+            <h2 class="section-title" data-i18n="contact_title">Contacto</h2>
+            <p class="section-subtitle" data-i18n="contact_subtitle">¿Tienes un proyecto en mente o buscas un
+                desarrollador? ¡Hablemos!</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <a href="mailto:gabrunixx@gmail.com">gabrunixx@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="icon-circle"><i class="fab fa-linkedin-in"></i></div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/gabrunix/" target="_blank">linkedin.com/in/gabrunix</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="icon-circle"><i class="fab fa-github"></i></div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/gabrunix" target="_blank">https://github.com/gabrunix</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="https://formsubmit.co/gabrunixx@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Tu Nombre *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Tu Email *" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="5" placeholder="Tu Mensaje *" required></textarea>
+                    </div>
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="Nuevo contacto desde tu portafolio!">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit" class="btn btn-primary" data-i18n="submit_btn">Enviar Mensaje <i
+                            class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Gabriel Urbaez. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+            <div class="footer-socials">
+                <a href="https://github.com/gabrunix" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gabrunix/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal para Certificados -->
+    <div id="certModal" class="modal">
+        <span class="modal-close" onclick="closeCertModal()">&times;</span>
+        <div class="modal-content-wrapper">
+            <span class="modal-prev" onclick="changeCertSlide(-1)">&#10094;</span>
+            <img class="modal-content" id="modalImg">
+            <span class="modal-next" onclick="changeCertSlide(1)">&#10095;</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
