@@ -375,7 +375,9 @@
                     <!-- FormSubmit Configuration -->
                     <input type="hidden" name="_subject" value="Nuevo contacto desde tu portafolio!">
                     <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Seguridad Anti-Spam -->
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="text" name="_honey" style="display:none">
                     <button type="submit" class="btn btn-primary" data-i18n="submit_btn">Enviar Mensaje <i
                             class="fas fa-paper-plane"></i></button>
                 </form>
