@@ -973,6 +973,8 @@ footer {
     }
     .hero-buttons {
         justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
     }
     .contact-wrapper {
         grid-template-columns: 1fr;
