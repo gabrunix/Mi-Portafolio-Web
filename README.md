@@ -1,7 +1,3 @@
-# ¡Hola! Bienvenidos a mi Portafolio 👋
-
-¡Qué bueno verte por aquí! Soy **Gabriel Urbaez** y te invito a echarle un vistazo al código fuente de mi portafolio web personal. 
-
 Decidí construir este sitio intentando mantenerlo simple pero visualmente impactante, demostrando que no siempre hace falta depender de decenas de frameworks pesados o plantillas comerciales. Con una buena base, logramos algo súper rápido, con animaciones atractivas y, lo más importante, muy fácil de mantener y escalar.
 
 ## 🛠️ Con qué está construido
@@ -31,21 +27,6 @@ Si quieres bucear por los archivos, traté de mantener la arquitectura lo más o
  ┗ 📜 README.md        # Esta misma presentación que estás leyendo :)
 ```
 
-## 🚀 ¿Cómo probarlo en tu compu?
-
-Lo mejor de este proyecto es que vive completamente del lado del navegador del usuario. Cero instalaciones pesadas, cero `npm install`:
-
-1. Abre tu terminal favorita y clona mi repositorio:
-   ```bash
-   git clone https://github.com/gabrunix/Mi-Portafolio-Web.git
-   ```
-2. Entra a la carpeta del proyecto.
-3. Tienes un par de opciones súper sencillas para arrancar y verlo:
-   * **La forma tradicional:** Simplemente ve a la carpeta en tu explorador y dale doble clic al archivo `index.html`.
-   * **La forma del Desarrollador (Recomendada):** Ábrelo en Visual Studio Code, bájate la extensión **Live Server** y lánzalo. ¡Así cualquier cambio o prueba que hagas en el código la vas a ver reflejada instantáneamente en el navegador!
-
----
-Si te gustó cómo quedó estructurado o usaste un pedacito de código para el tuyo, ¡un comentario o feedback siempre son más que bienvenidos!
-
-> 💻 **Gabriel Urbaez**  
-> [Conecta conmigo en LinkedIn](https://www.linkedin.com/in/gabrunix/) | [Mi perfil de GitHub](https://github.com/gabrunix)
+**Autor:** Gabriel Urbaez  
+**LinkedIn:** [https://www.linkedin.com/in/gabrunix/](https://www.linkedin.com/in/gabrunix/)  
+**GitHub:** [https://github.com/gabrunix](https://github.com/gabrunix)
