@@ -5,27 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Urbaez | Portfolio</title>
-    <!-- SEO Meta Tags -->
     <meta name="description"
         content="Portfolio de Gabriel Urbaez, Especialista TI y Desarrollador Software Full Stack. Experiencia en React, Node.js, Python y bases de datos.">
 
-    <!-- Devicon Icons -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Swiper CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="logo">&lt;Gabrunix Code /&gt; Mi Portafolio</div>
@@ -47,7 +37,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header id="about" class="hero">
         <div class="hero-particles" id="particles-js"></div>
         <div class="hero-content">
@@ -66,12 +55,9 @@
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary" data-i18n="contact_btn">Contáctame <i class="fas fa-arrow-right"></i></a>
                     <a href="#projects" class="btn btn-secondary" data-i18n="projects_btn">Ver Proyectos</a>
-                    <!-- Social icons on hero -->
                     <div class="social-links-hero">
-                        <a href="https://www.linkedin.com/in/gabrunix/" target="_blank" aria-label="LinkedIn"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/gabrunix" target="_blank" aria-label="GitHub"><i
-                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/gabrunix/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/gabrunix" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -89,13 +75,11 @@
         </div>
     </header>
 
-    <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="section-container">
             <h2 class="section-title" data-i18n="skills_title">Mis Habilidades</h2>
 
             <div class="skills-grid">
-                <!-- Lenguajes -->
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-code"></i></div>
                     <h3 data-i18n="skill_languages">Lenguajes</h3>
@@ -106,7 +90,6 @@
                     </ul>
                 </div>
 
-                <!-- Frontend & Frameworks -->
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-desktop"></i></div>
                     <h3 data-i18n="skill_frontend">Frontend / Frameworks</h3>
@@ -119,7 +102,6 @@
                     </ul>
                 </div>
 
-                <!-- Backend & Frameworks -->
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-server"></i></div>
                     <h3 data-i18n="skill_backend">Backend / Frameworks</h3>
@@ -133,7 +115,6 @@
                     </ul>
                 </div>
 
-                <!-- Databases -->
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-database"></i></div>
                     <h3 data-i18n="skill_db">Bases de Datos</h3>
@@ -146,7 +127,6 @@
                     </ul>
                 </div>
 
-                <!-- Tools & Others -->
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-tools"></i></div>
                     <h3 data-i18n="skill_tools">Herramientas</h3>
@@ -160,7 +140,6 @@
                     </ul>
                 </div>
 
-                <!-- Desktop Development -->
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-window-maximize"></i></div>
                     <h3 data-i18n="skill_desktop">Desktop</h3>
@@ -171,7 +150,6 @@
                     </ul>
                 </div>
 
-                <!-- Idiomas -->
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-language"></i></div>
                     <h3 data-i18n="languages_title">Idiomas</h3>
@@ -184,7 +162,6 @@
         </div>
     </section>
 
-    <!-- Formación Académica Section -->
     <section id="studies" class="section bg-darker">
         <div class="section-container">
             <h2 class="section-title" data-i18n="studies_title">Formación Académica</h2>
@@ -208,7 +185,6 @@
     </section>
 
 
-    <!-- Certifications Section -->
     <section id="certifications" class="section">
         <div class="section-container">
             <h2 class="section-title" data-i18n="cert_title">Mis Certificaciones</h2>
@@ -217,7 +193,6 @@
 
             <div class="swiper certifications-slider">
                 <div class="swiper-wrapper">
-                    <!-- Las 11 Certificaciones -->
                     <div class="swiper-slide cert-card" onclick="openCertModal(1)" style="cursor: pointer;">
                         <div class="cert-img-wrapper">
                             <img src="./assets/cert-1.jpg" alt="Certificación 1">
@@ -275,7 +250,6 @@
                     </div>
                 </div>
 
-                <!-- Swiper Features -->
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -283,12 +257,10 @@
         </div>
     </section>
 
-    <!-- Projects Portfolio -->
     <section id="projects" class="section bg-darker">
         <div class="section-container">
             <h2 class="section-title" data-i18n="projects_title">Proyectos Destacados</h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-img">
                         <img src="" alt="Project 1"
@@ -310,7 +282,6 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-img">
                         <img src="./assets/project2.jpg" alt="Project 2"
@@ -332,7 +303,6 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-img">
                         <img src="./assets/solanca.jpg" alt="Solanca"
@@ -352,7 +322,6 @@
                     </div>
                 </div>
 
-                <!-- Project 4 -->
                 <div class="project-card">
                     <div class="project-img">
                         <img src="./assets/urbaez.jpg" alt="Urbaez Soluciones TI"
@@ -375,7 +344,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="section-container">
             <h2 class="section-title" data-i18n="contact_title">Contacto</h2>
@@ -389,15 +357,15 @@
                         <h3>Email</h3>
                         <a href="mailto:gabrunixx@gmail.com">gabrunixx@gmail.com</a>
                     </div>
-                    <a href="https://www.linkedin.com/in/gabrunix/" target="_blank" class="contact-card" style="text-decoration:none; color:inherit; display:block;">
+                    <a href="https://www.linkedin.com/in/gabrunix/" target="_blank" class="contact-card contact-link">
                         <div class="icon-circle"><i class="fab fa-linkedin-in"></i></div>
                         <h3>LinkedIn</h3>
-                        <span style="color: var(--text-secondary); font-size: 0.95rem;">linkedin.com/in/gabrunix</span>
+                        <span class="contact-text">linkedin.com/in/gabrunix</span>
                     </a>
-                    <a href="https://github.com/gabrunix" target="_blank" class="contact-card" style="text-decoration:none; color:inherit; display:block;">
+                    <a href="https://github.com/gabrunix" target="_blank" class="contact-card contact-link">
                         <div class="icon-circle"><i class="fab fa-github"></i></div>
                         <h3>GitHub</h3>
-                        <span style="color: var(--text-secondary); font-size: 0.95rem;">https://github.com/gabrunix</span>
+                        <span class="contact-text">https://github.com/gabrunix</span>
                     </a>
                 </div>
 
@@ -411,20 +379,16 @@
                     <div class="form-group">
                         <textarea name="message" id="message" rows="5" placeholder="Tu Mensaje *" required></textarea>
                     </div>
-                    <!-- FormSubmit Configuration -->
                     <input type="hidden" name="_subject" value="Nuevo contacto desde tu portafolio!">
                     <input type="hidden" name="_template" value="box">
-                    <!-- Seguridad Anti-Spam -->
                     <input type="hidden" name="_captcha" value="true">
-                    <input type="text" name="_honey" style="display:none">
-                    <button type="submit" class="btn btn-primary" data-i18n="submit_btn">Enviar Mensaje <i
-                            class="fas fa-paper-plane"></i></button>
+                    <input type="text" name="_honey" class="honeypot">
+                    <button type="submit" class="btn btn-primary" data-i18n="submit_btn">Enviar Mensaje <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2026 Gabriel Urbaez. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
@@ -435,7 +399,6 @@
         </div>
     </footer>
 
-    <!-- Lightbox Modal para Certificados -->
     <div id="certModal" class="modal">
         <span class="modal-close" onclick="closeCertModal()">&times;</span>
         <div class="modal-content-wrapper">
@@ -445,7 +408,6 @@
         </div>
     </div>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

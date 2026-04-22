@@ -1005,3 +1005,18 @@ footer {
         gap: 1rem;
     }
 }
+
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.contact-text {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.honeypot {
+    display: none;
+}

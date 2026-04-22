@@ -39,7 +39,6 @@ const translations = {
         cert_title: "Mis Certificaciones",
         cert_subtitle: "Valido mis conocimientos a través de certificaciones oficiales.",
         cert_view: "Ver Certificado <i class='fas fa-external-link-alt'></i>",
-        cert_note: "* Puedes subir las imágenes de tus certificados a la carpeta de tu proyecto (y cambiar los nombres a cert1.jpg) o enlazar a tus PDFs.",
         projects_title: "Proyectos Destacados",
         project1_desc: "Plataforma web completa para la gestión de recursos empresariales, incluyendo ventas, inventario y reportes en tiempo real.",
         project2_desc: "Arquitectura backend robusta y segura para una tienda en línea, integración con pasarelas de pago y gestión de usuarios.",
@@ -88,7 +87,6 @@ const translations = {
         cert_title: "My Certifications",
         cert_subtitle: "I validate my knowledge through official certifications.",
         cert_view: "View Certificate <i class='fas fa-external-link-alt'></i>",
-        cert_note: "* You can upload your certificate images to your project folder (name them cert1.jpg, etc.) or link them to your PDFs.",
         projects_title: "Featured Projects",
         project1_desc: "Complete web platform for enterprise resource management, including sales, inventory, and real-time reports.",
         project2_desc: "Robust and secure backend architecture for an online store, integration with payment gateways, and user management.",
@@ -100,196 +98,108 @@ const translations = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Language Switcher
     const btnEs = document.getElementById('btn-es');
     const btnEn = document.getElementById('btn-en');
-    
+    const languageButtons = { es: btnEs, en: btnEn };
+
     function setLanguage(lang) {
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
-            if (translations[lang] && translations[lang][key]) {
+            if (translations[lang]?.[key]) {
                 el.innerHTML = translations[lang][key];
             }
         });
-        
-        if (lang === 'es') {
-            btnEs.classList.add('active');
-            btnEn.classList.remove('active');
-            document.documentElement.lang = 'es';
-        } else {
-            btnEn.classList.add('active');
-            btnEs.classList.remove('active');
-            document.documentElement.lang = 'en';
-        }
+
+        Object.entries(languageButtons).forEach(([langKey, btn]) => {
+            btn.classList.toggle('active', langKey === lang);
+        });
+        document.documentElement.lang = lang;
     }
 
     btnEs.addEventListener('click', () => setLanguage('es'));
     btnEn.addEventListener('click', () => setLanguage('en'));
 
-    // 2. Mobile Menu Toggle
     const mobileBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
-    
-    mobileBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
+    const closeMenu = () => navLinks.classList.remove('active');
 
-    // Close mobile menu when clicking a link
-    navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
-    });
+    mobileBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
 
-    // 3. Navbar Scrolled Effect
     const navbar = document.getElementById('navbar');
+    const SCROLL_THRESHOLD = 50;
+    const scrolledStyle = { background: 'rgba(11, 15, 25, 0.95)', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.5)' };
+    const defaultStyle = { background: 'rgba(11, 15, 25, 0.85)', boxShadow: 'none' };
+
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(11, 15, 25, 0.95)';
-            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.5)';
-        } else {
-            navbar.style.background = 'rgba(11, 15, 25, 0.85)';
-            navbar.style.boxShadow = 'none';
-        }
+        const style = window.scrollY > SCROLL_THRESHOLD ? scrolledStyle : defaultStyle;
+        Object.assign(navbar.style, style);
     });
 
-    // 4. Initialize Particles.js (if library is loaded)
     if (typeof particlesJS !== 'undefined') {
-        particlesJS('particles-js', {
-          "particles": {
-            "number": {
-              "value": 50,
-              "density": {
-                "enable": true,
-                "value_area": 800
-              }
+        const particlesConfig = {
+            particles: {
+                number: { value: 50, density: { enable: true, value_area: 800 } },
+                color: { value: ['#3b82f6', '#8b5cf6'] },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: '#3b82f6', opacity: 0.2, width: 1 },
+                move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
             },
-            "color": {
-              "value": ["#3b82f6", "#8b5cf6"]
+            interactivity: {
+                detect_on: 'canvas',
+                events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: true, mode: 'push' }, resize: true },
+                modes: { grab: { distance: 140, line_linked: { opacity: 0.5 } }, push: { particles_nb: 4 } }
             },
-            "shape": {
-              "type": "circle",
-            },
-            "opacity": {
-              "value": 0.5,
-              "random": true,
-            },
-            "size": {
-              "value": 3,
-              "random": true,
-            },
-            "line_linked": {
-              "enable": true,
-              "distance": 150,
-              "color": "#3b82f6",
-              "opacity": 0.2,
-              "width": 1
-            },
-            "move": {
-              "enable": true,
-              "speed": 2,
-              "direction": "none",
-              "random": false,
-              "straight": false,
-              "out_mode": "out",
-              "bounce": false,
-            }
-          },
-          "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-              "onhover": {
-                "enable": true,
-                "mode": "grab"
-              },
-              "onclick": {
-                "enable": true,
-                "mode": "push"
-              },
-              "resize": true
-            },
-            "modes": {
-              "grab": {
-                "distance": 140,
-                "line_linked": {
-                  "opacity": 0.5
-                }
-              },
-              "push": {
-                "particles_nb": 4
-              }
-            }
-          },
-          "retina_detect": true
-        });
+            retina_detect: true
+        };
+        particlesJS('particles-js', particlesConfig);
     }
 
-    // 5. Initialize Swiper for Certifications
     if (typeof Swiper !== 'undefined') {
-        const swiper = new Swiper('.certifications-slider', {
+        new Swiper('.certifications-slider', {
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: 'auto',
-            coverflowEffect: {
-                rotate: 15,
-                stretch: 0,
-                depth: 200,
-                modifier: 1,
-                slideShadows: true,
-            },
+            coverflowEffect: { rotate: 15, stretch: 0, depth: 200, modifier: 1, slideShadows: true },
             loop: true,
-            autoplay: {
-                delay: 3500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                320: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 }
-            }
+            autoplay: { delay: 3500, disableOnInteraction: false },
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            breakpoints: { 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
         });
     }
 
-    // Modal Certificaciones Logic
-    window.currentCertIndex = 1;
-    window.totalCerts = 11;
+    const TOTAL_CERTS = 11;
+    const certModal = {
+        currentIndex: 1,
+        element: document.getElementById('certModal'),
+        imgElement: document.getElementById('modalImg'),
 
-    window.openCertModal = function(index) {
-        document.getElementById('certModal').style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-        showCertSlide(index);
-    }
+        toggleOverlay(show) {
+            this.element.style.display = show ? 'flex' : 'none';
+            document.body.style.overflow = show ? 'hidden' : 'auto';
+        },
 
-    window.closeCertModal = function() {
-        document.getElementById('certModal').style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-
-    window.changeCertSlide = function(step) {
-        showCertSlide(window.currentCertIndex + step);
-    }
-
-    window.showCertSlide = function(index) {
-        window.currentCertIndex = index;
-        if (window.currentCertIndex > window.totalCerts) window.currentCertIndex = 1;
-        if (window.currentCertIndex < 1) window.currentCertIndex = window.totalCerts;
-        document.getElementById('modalImg').src = `./assets/cert-${window.currentCertIndex}.jpg`;
-    }
-
-    // Cerrar si hace click fuera de la imagen
-    window.onclick = function(event) {
-        const modal = document.getElementById('certModal');
-        if (event.target === modal) {
-            closeCertModal();
+        setSlide(index) {
+            this.currentIndex = ((index - 1) % TOTAL_CERTS) + 1;
+            if (this.currentIndex < 1) this.currentIndex = TOTAL_CERTS;
+            this.imgElement.src = `./assets/cert-${this.currentIndex}.jpg`;
         }
-    }
+    };
+
+    window.openCertModal = (index) => {
+        certModal.toggleOverlay(true);
+        certModal.setSlide(index);
+    };
+
+    window.closeCertModal = () => certModal.toggleOverlay(false);
+    window.changeCertSlide = (step) => certModal.setSlide(certModal.currentIndex + step);
+    window.showCertSlide = (index) => certModal.setSlide(index);
+
+    window.onclick = (event) => {
+        if (event.target === certModal.element) closeCertModal();
+    };
 });
