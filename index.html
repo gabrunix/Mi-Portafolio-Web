@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="logo">&lt;Gabrunix Code /&gt; Mi Portafolio</div>
+            <div class="logo">Mi Portafolio</div>
             <ul class="nav-links">
                 <li><a href="#about" data-i18n="nav_about">Sobre Mí</a></li>
                 <li><a href="#skills" data-i18n="nav_skills">Habilidades</a></li>
@@ -48,7 +48,7 @@
                     <span class="gradient-text" data-i18n="role2">Desarrollador de Software</span>
                 </h2>
                 <p class="description" data-i18n="hero_desc">
-                    Soy Desarrollador Full Stack Jr con experiencia en proyectos académicos, personales, corporativos y
+                    Soy Desarrollador Full Stack Semi-Senior con experiencia en proyectos académicos, personales, corporativos y
                     freelancer, creando soluciones completas desde UX/UI y frontend hasta backend y bases de datos.
                     Destaco por mi proactividad y mi enfoque en el aprendizaje rápido y continuo.
                 </p>
@@ -64,7 +64,7 @@
             <div class="hero-image-wrapper">
                 <div class="hero-image-glow"></div>
                 <img src="./assets/profile.jpg" alt="Gabriel Urbaez" class="hero-image"
-                    onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
                 <div class="badges-row">
                     <div class="floating-badge badge-js"><i class="devicon-javascript-plain colored"></i></div>
                     <div class="floating-badge badge-react"><i class="devicon-react-original colored"></i></div>
@@ -87,6 +87,8 @@
                         <li><i class="devicon-python-plain colored"></i> Python</li>
                         <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
                         <li><i class="devicon-typescript-plain colored"></i> TypeScript</li>
+                        <li><i class="devicon-csharp-plain colored"></i> C#</li>
+                        <li><i class="devicon-dart-plain colored"></i> Dart</li>
                     </ul>
                 </div>
 
@@ -98,6 +100,7 @@
                         <li><i class="devicon-css3-plain colored"></i> CSS3</li>
                         <li><i class="devicon-react-original colored"></i> React</li>
                         <li><i class="devicon-angularjs-plain colored"></i> Angular</li>
+                        <li><i class="devicon-flutter-plain colored"></i> Flutter</li>
                         <li><i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS</li>
                     </ul>
                 </div>
@@ -110,6 +113,8 @@
                         <li><i class="devicon-express-original colored"></i> Express.js</li>
                         <li><i class="devicon-django-plain colored"></i> Django</li>
                         <li><i class="devicon-fastapi-plain colored"></i> FastAPI</li>
+                        <li><i class="devicon-dotnetcore-plain colored"></i> .NET</li>
+                        <li><i class="devicon-dotnetcore-plain colored"></i> ASP.NET</li>
                         <li><i class="fas fa-network-wired text-accent"></i> <span data-i18n="skill_apis">APIs</span></li>
                         <li><i class="fas fa-shield-alt text-accent"></i> <span data-i18n="skill_auth">JWT Auth</span></li>
                     </ul>
@@ -135,7 +140,6 @@
                         <li><i class="devicon-git-plain colored"></i> Git / GitHub</li>
                         <li><i class="devicon-docker-plain colored"></i> Docker</li>
                         <li><i class="fab fa-linux text-accent"></i> <span data-i18n="skill_os">Linux, MacOS, Windows</span></li>
-                        <li><i class="fas fa-robot text-accent"></i> <span data-i18n="skill_automation">N8N</span></li>
                         <li><i class="fas fa-chart-bar text-accent"></i> <span data-i18n="skill_bi">Power BI</span></li>
                     </ul>
                 </div>
@@ -145,8 +149,10 @@
                     <h3 data-i18n="skill_desktop">Desktop</h3>
                     <ul>
                         <li><i class="devicon-python-plain colored"></i> <span data-i18n="skill_python_gui">Python GUI</span></li>
-                        <li><i class="fas fa-code text-accent"></i> Tkinter / PyQt / Kivy</li>
-                        <li><i class="devicon-electron-original colored"></i> Electron.js</li>
+                        <li><i class="devicon-tauri-plain colored"></i> Tauri</li>
+                        <li><i class="fab fa-windows text-accent"></i> (WinForms)</li>
+                        <li><i class="fab fa-windows text-accent"></i> WPF</li>
+                        <li><i class="fab fa-windows text-accent"></i> 🥉 WinUI</li>
                     </ul>
                 </div>
 
@@ -173,11 +179,10 @@
                 <div class="edu-content">
                     <h3 class="edu-institution" data-i18n="edu_inst">Instituto Tecnológico de Las Américas (ITLA) - Rep.
                         Dom</h3>
-                    <h4 class="edu-title" data-i18n="edu_degree">Estudios Superiores</h4>
+                    <h4 class="edu-title" data-i18n="edu_degree"><span style='color: var(--primary); font-size: 1.15em;'>Desarrollo de Software</span> <span style='font-size: 0.85em; color: var(--text-light); font-weight: normal;'>(Estudios Superiores)</span></h4>
+                    <h5 class="edu-cert-title" data-i18n="edu_certs_title" style="margin-top: 15px; margin-bottom: 5px; color: var(--accent); font-size: 1.1rem;">Certificaciones y Especializaciones:</h5>
                     <p class="edu-desc" data-i18n="edu_desc">
-                        Desarrollo de software, Bases de datos, Certificaciones en Python, JavaScript, Taller de
-                        Ciberseguridad, Business Intelligence with Power BI, Ingeniería de Prompts e Inteligencia
-                        Artificial.
+                        Bases de datos, Python, JavaScript, Docker, Git, Taller de Ciberseguridad, Business Intelligence with Power BI, Ingeniería de Prompts e Inteligencia Artificial.
                     </p>
                 </div>
             </div>
@@ -263,8 +268,8 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="" alt="Project 1"
-                            onerror="this.src='https://solanca.netlify.app'">
+                        <img src="./assets/project1.jpg" alt="Project 1"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
                     </div>
                     <div class="project-content">
                         <div class="project-tags">
@@ -285,7 +290,7 @@
                 <div class="project-card">
                     <div class="project-img">
                         <img src="./assets/project2.jpg" alt="Project 2"
-                            onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
                     </div>
                     <div class="project-content">
                         <div class="project-tags">
@@ -306,7 +311,7 @@
                 <div class="project-card">
                     <div class="project-img">
                         <img src="./assets/solanca.jpg" alt="Solanca"
-                            onerror="this.src='https://images.unsplash.com/photo-1541888081622-4806a6d68b6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541888081622-4806a6d68b6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
                     </div>
                     <div class="project-content">
                         <div class="project-tags">
@@ -325,7 +330,7 @@
                 <div class="project-card">
                     <div class="project-img">
                         <img src="./assets/urbaez.jpg" alt="Urbaez Soluciones TI"
-                            onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
                     </div>
                     <div class="project-content">
                         <div class="project-tags">
